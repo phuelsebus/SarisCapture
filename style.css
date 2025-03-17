@@ -266,6 +266,7 @@ html {
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
     height: 500px;
+    position: relative;
 }
 
 .slideshow-photo::-webkit-scrollbar {
@@ -284,6 +285,8 @@ html {
     object-fit: cover;
     scroll-snap-align: start;
     display: block;
+    position: relative;
+    z-index: 1;
 }
 
 .slideshow-container {
