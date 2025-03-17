@@ -247,7 +247,7 @@ html {
 /* Slideshow */
 
 .slideshow {
-    padding: 2rem;
+    padding: 1rem;
     background-color: #B9D9D5;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(51, 51, 51, 0.1);
@@ -265,6 +265,7 @@ html {
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
+    height: 500px;
 }
 
 .slideshow-photo::-webkit-scrollbar {
@@ -282,6 +283,7 @@ html {
     height: 100%;
     object-fit: cover;
     scroll-snap-align: start;
+    display: block;
 }
 
 .slideshow-container {
