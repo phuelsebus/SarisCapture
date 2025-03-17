@@ -253,30 +253,41 @@ html {
     box-shadow: 0 4px 8px rgba(51, 51, 51, 0.1);
     margin-bottom: 2rem;
     overflow: hidden;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
 }
 
 .slideshow-photo {
     display: flex;
-    aspect-ratio: 16/9;
+    width: 100%;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    box-shadow: 0 4px 8px rgba(51, 51, 51, 0.15);
-    border-radius: 0.5rem;
-    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+}
+
+.slideshow-photo::-webkit-scrollbar {
+    display: none;
+}
+
+.slideshow-photo {
     -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.slideshow-photo img {
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    scroll-snap-align: start;
 }
 
 .slideshow-container {
     position: relative;
     max-width: 68rem;
     margin: 0 auto;
-}
-
-.slideshow-photo img {
-    flex: 1 0 100%;
-    scroll-snap-align: start;
-    object-fit: cover;
 }
 
 .slideshow-nav-buttons {
